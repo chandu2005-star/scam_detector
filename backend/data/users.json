@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1765820428272,
+    "name": "Chandu",
+    "email": "chandu@gmail.com",
+    "phone": "9876543210",
+    "password": "1234"
+  },
+  {
+    "id": 1765904513581,
+    "name": "bindu",
+    "email": "bindu@gmail.com",
+    "phone": null,
+    "password": "5555"
+  },
+  {
+    "id": 1765904777916,
+    "name": "dd",
+    "email": "d@gamil.com",
+    "phone": null,
+    "password": "4"
+  },
+  {
+    "id": 1765904927580,
+    "name": "k",
+    "email": "k@gmail.com",
+    "phone": null,
+    "password": "5"
+  },
+  {
+    "id": 1765904956491,
+    "name": "k",
+    "email": "l@gmail.com",
+    "phone": null,
+    "password": "9"
+  },
+  {
+    "id": 1765905338628,
+    "name": "love",
+    "email": "love@gmail.com",
+    "phone": null,
+    "password": "789"
+  },
+  {
+    "id": 1766065882089,
+    "name": "satish",
+    "email": "satish@gmail.com",
+    "phone": null,
+    "password": "777"
+  },
+  {
+    "id": 1766124138561,
+    "name": "Madhav",
+    "email": "madhav@gmail.com",
+    "phone": null,
+    "password": "Sherly"
+  },
+  {
+    "id": 1766124687195,
+    "name": "Vinay Krishna",
+    "email": "vinay@gmail.com",
+    "phone": null,
+    "password": "VK@777vinay"
+  }
+]
