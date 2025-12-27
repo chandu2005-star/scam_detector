@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto;
+}
+
+/* Page wrapper */
+.scan-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6, #8b5cf6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 16px;
+  color: #e5e7eb;
+}
+
+/* Header */
+.scan-header {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.scan-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Back button */
+.back-btn {
+  background: rgba(255,255,255,0.18);
+  border: none;
+  color: #e5e7eb;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Upload box */
+.upload-box {
+  width: 100%;
+  max-width: 720px;
+  min-height: 220px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  gap: 16px;
+  box-shadow: inset 0 0 25px rgba(255,255,255,0.2);
+  margin-bottom: 28px;
+}
+
+.upload-icon {
+  font-size: 48px;
+}
+
+.upload-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e0e7ff;
+}
+
+/* Choose image button */
+.upload-btn {
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f2937;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(56,189,248,0.5);
+}
+
+.upload-btn:active {
+  background: #9ca3af;
+  box-shadow: none;
+}
+
+/* Analyze button */
+.scan-btn {
+  width: 240px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(56,189,248,0.6);
+  margin-bottom: 32px;
+}
+
+.scan-btn:active {
+  background: #9ca3af;
+  box-shadow: none;
+}
+
+/* Result box (base – unchanged) */
+.result-box {
+  width: 100%;
+  max-width: 720px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-size: 16px;
+  color: #e5e7eb;
+  box-shadow: inset 0 0 25px rgba(255,255,255,0.2);
+}
+
+/* ✅ ONLY ADDITIONS BELOW */
+
+/* Scam */
+.result-box.scam {
+  border: 1px solid rgba(239, 68, 68, 0.6);
+}
+
+/* Safe */
+.result-box.safe {
+  border: 1px solid rgba(34, 197, 94, 0.6);
+}
+
+/* Small explanation text */
+.result-desc {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+.preview-img {
+  margin-top: 12px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+
+.report-btn {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.report-btn:hover {
+  background: #b71c1c;
+}
+.ocr-text-box {
+  margin-top: 12px;
+  padding: 10px;
+  background: #5c5858;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.ocr-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

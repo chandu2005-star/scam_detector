@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto;
+}
+
+/* Page wrapper */
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6, #8b5cf6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  color: #e5e7eb;
+}
+
+/* Header */
+.profile-header {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.profile-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Back button */
+.back-btn {
+  background: rgba(255,255,255,0.18);
+  border: none;
+  color: #e5e7eb;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Profile card */
+.profile-card {
+  width: 100%;
+  max-width: 360px;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.4),
+    inset 0 0 25px rgba(255,255,255,0.2);
+  margin-bottom: 36px;
+}
+
+/* Avatar */
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 30px rgba(99,102,241,0.8);
+}
+
+/* Name & email */
+.name {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.email {
+  font-size: 14px;
+  color: #c7d2fe;
+}
+
+/* Actions */
+.profile-actions {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.action-btn {
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(56,189,248,0.6);
+}
+
+.action-btn:active {
+  background: #9ca3af;
+  box-shadow: none;
+}
+
+.action-btn.danger {
+  background: linear-gradient(135deg, #f43f5e, #be123c);
+  box-shadow: 0 10px 25px rgba(244,63,94,0.6);
+}
+/* Logout modal overlay */
+.logout-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* Modal box */
+.logout-modal {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 28px 24px;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.logout-modal h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.logout-modal p {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* Modal buttons */
+.logout-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.confirm-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f43f5e, #be123c);
+  color: white;
+}
